@@ -1,0 +1,26 @@
+nav.navbar {
+    height: 70px;
+    padding: 0;
+}
+
+nav.nav-item div.container {
+    height: 100%;
+}
+
+a.navbar-brand img {
+    padding: 5px;
+}
+
+li.nav-item {
+}
+
+li.nav-item a.nav-link {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+}
+
+li.nav-item a.nav-link:hover {
+    box-shadow: inset 0 -70px 0 0 #e99a00;
+}

@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+{% block content %}
+    <section class="main-section">
+        <div class="main-image"></div>
+        <span class="main-topic">PUBG BOT</span>
+        <a class="main-button" href="invite">초대하기</a>
+    </section>
+    <div class="about-section">
+        <div class="container">
+            <section class="about">
+                <img class="about-item" src="{{ url_for('static', filename='image/about-1.gif') }}" />
+                <div class="about-item">
+                    <span class="about-item-topic">버튼을 통해 다양한 정보를 알아보세요.</span>
+                    <span class="about-item-description">
+                        다양한 버튼을 통하여 다양한 전적 정보를 보다 쉽고 간편하게 확인해보세요!<br/>
+                        하나의 메시지로 솔로, 듀오, 스쿼드 정보까지 한 번에 알아볼 수 있습니다!
+                    </span>
+                </div>
+            </section>
+        </div>
+    </div>
+{% endblock %}
