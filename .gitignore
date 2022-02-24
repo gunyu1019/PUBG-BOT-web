@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# SSL File (Don't upload!)
+cert.pem
+fullchain.pem
+privkey.pem
+
+# Application Configuration
+app/config/config.ini
