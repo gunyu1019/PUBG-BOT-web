@@ -135,3 +135,7 @@ privkey.pem
 
 # Application Configuration
 app/config/config.ini
+
+# IDE configuration
+.idea/
+.vscode/
