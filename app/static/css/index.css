@@ -2,6 +2,7 @@ body {
     background-color: #1f2124;
 }
 
+/* Main Section */
 section.main-section {
     display: grid;
     width: 100%;
@@ -46,13 +47,14 @@ section.main-section a.main-button {
     top: 300px;
 }
 
-div.about-section {
-    background: #34373e;
-}
-
 section.main-section a.main-button:hover {
     box-shadow: inset 0 -60px #e99a00;
     text-decoration: none;
+}
+
+/* About Section */
+div.about-section {
+    background: #34373e;
 }
 
 section.about {
@@ -60,14 +62,14 @@ section.about {
     width: 100%;
 }
 
+section.about .about-item {
+    max-width: 100%;
+}
+
 @media (min-width: 1020px) {
     section.about {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-
-    section.about .about-item {
-        max-width: 100%;
     }
 
     section.about .about-item:nth-child(1) {
@@ -77,19 +79,42 @@ section.about {
     section.about .about-item:nth-child(2) {
         padding-left: 15px;
     }
+
+    section.about .about-item span.about-item-right {
+        text-align: right;
+    }
+
+    section.about .about-item span.about-item-left {
+        text-align: left;
+    }
+}
+
+section.about .about-item span.about-item-left,
+section.about .about-item span.about-item-right {
+    display: block;
 }
 
 section.about .about-item span.about-item-topic {
-    display: block;
-    text-align: right;
     color: white;
     font-size: 24px;
     font-weight: bold;
 }
 
 section.about .about-item span.about-item-description {
-    display: block;
-    text-align: right;
     color: white;
     font-size: 15px;
+}
+
+section.about div.about-item.carousel.slide div.carousel-inner {
+    height: 586px;
+}
+
+section.about div.about-item.carousel.slide div.carousel-inner div.carousel-item div.carousel-in-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    height: 586px;
 }

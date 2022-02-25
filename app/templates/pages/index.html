@@ -13,11 +13,47 @@
             <section class="about">
                 <img class="about-item" src="{{ url_for('static', filename='image/about-1.gif') }}" />
                 <div class="about-item">
-                    <span class="about-item-topic">버튼을 통해 다양한 정보를 알아보세요.</span>
-                    <span class="about-item-description">
+                    <span class="about-item-topic about-item-right">버튼을 통해 다양한 정보를 알아보세요.</span>
+                    <span class="about-item-description about-item-right">
                         다양한 버튼을 통하여 다양한 전적 정보를 보다 쉽고 간편하게 확인해보세요!<br/>
                         하나의 메시지로 솔로, 듀오, 스쿼드 정보까지 한 번에 알아볼 수 있습니다!
                     </span>
+                </div>
+            </section>
+            <section class="about">
+                <div class="about-item">
+                    <span class="about-item-topic about-item-left">매치 히스토리 기능도 다양하게 볼 수 있어요!</span>
+                    <span class="about-item-description about-item-left">
+                        플레이어가 플레이한 내역을 디스코드 채팅을 통하여 검색해보세요!<br/>
+                        버튼을 통해 팀원들의 플레이 정보와 비교해보세요!<br/>
+                        지도에서 어디서 보급상자를 얻었는지, 어디서 킬했는지 알아볼 수도 있답니다!
+                    </span>
+                </div>
+                <div class="about-item carousel slide" id="aboutCarousel" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="w-100 carousel-in-item">
+                                <img src="{{ url_for('static', filename='image/about-21.png') }}" alt="First slide">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="w-100 carousel-in-item">
+                                <img src="{{ url_for('static', filename='image/about-22.png') }}" alt="Second slide">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </section>
         </div>
