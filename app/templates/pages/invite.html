@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sub-section.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/invite.css') }}">
+    <!--
+        <meta http-equiv="refresh" content="0; url={{ base }}/api/oauth2/authorize?client_id={{ client_id }}&permissions={{ permission }}&scope={{ "%20".join(scope) }}" />
+    -->
+{% endblock %}
+{% block content %}
+    {% include('element/sub-section.html') %}
+    <div class="main-section">
+        <span class="main-topic">이동 중입니다.</span>
+        <span class="main-description">
+            만약 이 창이 지속된다면,
+            <a href="{{ base }}/api/oauth2/authorize?client_id={{ client_id }}&permissions={{ permission }}&scope={{ "%20".join(scope) }}">이곳</a>
+            을 클릭해주세요.
+        </span>
+    </div>
+{% endblock %}

@@ -1,5 +1,5 @@
 from flask import Blueprint
-from flask import redirect
+from flask import render_template
 from flask import request
 
 
@@ -17,4 +17,10 @@ scope = ["applications.commands", "bot"]
 @bp.route("/invite", methods=['GET'])
 def invite():
     permission = request.args.get("permission", default=default_permission, type=int)
-    return redirect("{base}/api/oauth2/authorize")
+    return render_template(
+        'pages/invite.html',
+        base=base,
+        client_id=client_id,
+        scope=scope,
+        permission=permission
+    )
