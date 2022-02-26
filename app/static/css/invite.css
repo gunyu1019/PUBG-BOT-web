@@ -1,11 +1,32 @@
+@font-face{
+    font-family: "Nanum_Gothic-Bold";
+    src: url("../font/Nanum_Gothic/NanumGothic-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Nanum_Gothic-Regular";
+    src: url("../font/Nanum_Gothic/NanumGothic-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Noto_Sans_KR-Regular";
+    src: url("../font/Noto_Sans_KR/NotoSansKR-Regular.otf");
+}
+
+@font-face{
+    font-family: "Noto_Sans_KR-Bold";
+    src: url("../font/Noto_Sans_KR/NotoSansKR-Bold.otf");
+}
+
 div.main-section {
-    margin: 100px 0;
+    margin: calc(50vh - 339px) 0;
     width: 100%;
     height: 100%;
     text-align: center;
 }
 
 div.main-section span.main-topic {
+    font-family: Noto_Sans_KR-Bold, serif;
     display: block;
     color: white;
     font-weight: 800;
@@ -13,6 +34,7 @@ div.main-section span.main-topic {
 }
 
 div.main-section span.main-description {
+    font-family: Noto_Sans_KR-Regular, serif;
     display: block;
     color: white;
     padding-bottom: 20px;

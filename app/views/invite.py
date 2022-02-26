@@ -24,3 +24,11 @@ def invite():
         scope=scope,
         permission=permission
     )
+
+
+@bp.route("/forum", methods=['GET'])
+def forum():
+    return render_template(
+        'pages/forum.html',
+        invite_id="72sGsUhVmZ"
+    )

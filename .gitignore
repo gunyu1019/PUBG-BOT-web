@@ -133,6 +133,10 @@ cert.pem
 fullchain.pem
 privkey.pem
 
+# CR
+app/static/font/
+app/static/fontawesome/
+
 # Application Configuration
 app/config/config.ini
 

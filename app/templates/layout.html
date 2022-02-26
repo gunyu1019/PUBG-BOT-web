@@ -6,15 +6,20 @@
         <script src="{{ url_for('static', filename='js/jquery/jquery.slim.min.js') }}"></script>
         <script src="{{ url_for('static', filename='js/popper/umd/popper.min.js') }}"></script>
         <script src="{{ url_for('static', filename='js/bootstrap/bootstrap.min.js') }}"></script>
+        <script src="https://kit.fontawesome.com/afc467762e.js"></script>
 
         <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome/css/all.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome/css/all.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
         {% block head %}{% endblock %}
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     </head>
     <body>
         {% include 'element/navbar.html' %}
         {% block content %}{% endblock %}
+        {% include 'element/footer.html' %}
     </body>
 </html>
